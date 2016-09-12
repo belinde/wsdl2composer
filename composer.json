@@ -1,0 +1,22 @@
+{
+    "name": "belinde/wsdl2composer",
+    "description": "Analyze a WSDL file and generate a Composer package with all the classess required to use the service",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Franco Traversaro",
+            "email": "f.traversaro@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wsdl2Composer\\": "src/"
+        }
+    },
+    "require": {
+        "symfony/filesystem": "~2.8",
+        "symfony/console": "~2.8",
+        "symfony/yaml": "~2.8"
+    }
+}
