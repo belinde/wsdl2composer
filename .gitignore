@@ -1,3 +1,5 @@
+test.wsdl
 composer.phar
 /vendor/
 /nbproject/
+/prove/
