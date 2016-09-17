@@ -1,6 +1,6 @@
 <?php
 
-namespace Wsdl2Composer\Meta;
+namespace Wsdl2Composer\Definitions;
 
 /**
  * Description of ClassDefinition

@@ -2,9 +2,9 @@
 
 namespace Wsdl2Composer\Writers;
 
-use \Wsdl2Composer\Meta\ClassDefinition;
-use \Wsdl2Composer\Meta\PropertyDefinition;
-
+use Wsdl2Composer\Definitions\ClassDefinition;
+use Wsdl2Composer\Definitions\PropertyDefinition;
+use Wsdl2Composer\Definitions\GenericInfo;
 /**
  * Description of Basic
  *
@@ -12,7 +12,7 @@ use \Wsdl2Composer\Meta\PropertyDefinition;
  */
 class Basic extends AbstractWriter {
 
-    private function docBlock( \Wsdl2Composer\Meta\GenericInfo $obj ) {
+    private function docBlock( GenericInfo $obj ) {
         if ( $obj->getShortDescription() or $obj->getLongDescription() or $obj->getMetaInfos() ) {
             $this->write( '/**' );
             $this->write( ' * ' . $obj->getShortDescription() );

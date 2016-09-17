@@ -3,7 +3,7 @@
 namespace Wsdl2Composer\Writers;
 
 use \Symfony\Component\Filesystem\Filesystem;
-use \Wsdl2Composer\Meta\ClassDefinition;
+use \Wsdl2Composer\Definitions\ClassDefinition;
 
 /**
  * Description of AbstractWriter
